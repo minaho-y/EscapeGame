@@ -298,7 +298,7 @@ public class CameraManager : MonoBehaviour
             new CameraPositionInfo
             {
                 Position = new Vector3(-2, 2, 6),
-                Rotate = new Vector3(32, 277, 0),
+                Rotate = new Vector3(23, 277, 0),
                 MoveNames = new MoveNames
                 {
                     Back = "Room2_Left",
