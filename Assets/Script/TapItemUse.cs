@@ -13,10 +13,14 @@ public class TapItemUse : TapCollider
 
         if (ItemImage.activeSelf)
         {
-            ItemImage.SetActive(false);
-            gameObject.SetActive(false);
-            foreach(var obj in ActiveObjects)
-                obj.SetActive(true);
+            var selectedItem = ItemImage.transform.GetChild(1).gameObject;
+            if (selectedItem.activeSelf)
+            {
+                ItemImage.SetActive(false);
+                gameObject.SetActive(false);
+                foreach(var obj in ActiveObjects)
+                    obj.SetActive(true);
+            }
         }
     }
 }
